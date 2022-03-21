@@ -19,7 +19,7 @@ Then you will see the results of Components.js.
 4. Instantiate from config file
 
 ## Current stage and insights of author's usage experience
-Author struggle with Components.js quite a while. The followings descripts how this project works in certain steps.
+I struggle with Components.js quite a while. The followings descripts how this project works in certain steps.
 - Step 0: Project setup
     - Before dependencies installation, you sould setup your own project by "npm init" command. "package.json" is the configuration file for your own project. Just reminding, this is a common sense.
 
@@ -32,7 +32,7 @@ Author struggle with Components.js quite a while. The followings descripts how t
     - In additionally, your class shoud be exported in index.ts by adding 'export * from "./[Your_Class]";'.
 
 - Step 2: Mark your package as a Components.js module
-    - According to [componentsjs-generator](https://github.com/LinkedSoftwareDependencies/Components-Generator.js), declare components is by adding '"lsd:module": true' in package.json. However, it seems not eligible? I did the by adding '**"lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/[your_project_name]"**'. My project is setted as '"lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/@hsinpeng/componentsjs-example"'.
+    - According to [componentsjs-generator](https://github.com/LinkedSoftwareDependencies/Components-Generator.js), declare components is by adding '"lsd:module": true' in package.json. However, it seems not eligible? The declaration could be done by adding '**"lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/[your_project_name]"**'. My project is setted as '"lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/@hsinpeng/componentsjs-example"'.
     - There are some additional settings should be done in package.json:
         - Modify "main" as '**"main": "./[outDir]/index.js"**'. Note that outDir is setted in tsconfig.json.
         - Add "types" as '**"types": "./[outDir]/index.d.ts"**'.
